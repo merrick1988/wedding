@@ -1,0 +1,16 @@
+section{
+  padding: 1em 1em 2em;
+  text-align: center;
+  &.section--pink{
+    background: $color-pink;
+    .section__head {
+      color: $color-white;
+    }
+  }
+}
+
+.section__head {
+  @extend .h1;
+  color: $color-red-dark;
+  margin: 0.5em;
+}
