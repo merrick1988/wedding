@@ -1,5 +1,24 @@
 @import "variables";
 
-.react-parallax {
-  height: 600px;
+.react-parallax-content{
+  z-index: 2;
+}
+
+.react-parallax{
+  background: $color-black-light;
+
+  img{
+    opacity: 0.3;
+  }
+
+  &.parallax-main{
+    img{
+      opacity: 0.7;
+      //-webkit-filter: contrast(1) grayscale(0.5) saturate(2) sepia(0.4) blur(2px);
+    }
+  }
+}
+
+.parallax-main-container{
+  margin: 7.5em 0;
 }

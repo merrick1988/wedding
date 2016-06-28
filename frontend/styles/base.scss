@@ -1,18 +1,16 @@
+@font-face {
+  font-family: 'adine_kirnberg';
+  src:  url('../fonts/adine_kirnberg.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'alexandra_script';
+  src:  url('../fonts/alexandra_script.ttf')  format('truetype')
+}
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-}
-
-*:focus{
-  outline: none;
-}
-
-.main-content{
-  margin: 12em 0;
+  font-size: 16px;
+  color: $color-black-light;
+  font-weight: 300;
 }

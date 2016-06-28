@@ -1,5 +1,6 @@
 const webpack = require("webpack"),
     path = require("path"),
+    importOnce = require('node-sass-import-once'),
     appPath = __dirname,
     frontendPath = path.join(appPath, "frontend"),
     distPath = path.join(appPath, "dist");
@@ -39,11 +40,14 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|svg)$/,
                 loader: 'url-loader?limit=8192&name=[name].[ext]'
             }, {
-                test: /fonts\/.*\.(eot|ttf|woff|svg|svgz)$/,
+                test: /fonts\/.*\.(eot|ttf|woff|woff2|svg|svgz)$/,
                 loader: 'file?name=fonts/[name].[ext]'
             }, {
                 test: /\.json/,
                 loader: 'json'
+            } , {
+                test: /materialize-css\/bin\//,
+                loader: 'imports?jQuery=jquery,$=jquery,hammerjs'
             }
         ]
     },

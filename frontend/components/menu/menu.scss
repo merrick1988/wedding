@@ -1,35 +1,78 @@
 @import "../../styles/variables";
 
-menu{
-  padding: 0 10px;
-  ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    li{
-      display: inline-block;
-      margin: 0 2em;
-      position: relative;
+.bm-burger-button {
+  position: absolute;
+  width: 2em;
+  height: 1.6em;
+  left: 2em;
+  top: 2em;
+}
+
+.bm-burger-bars {
+  background: $color-white-08;
+}
+
+.bm-cross {
+  background: $color-white-08;
+}
+
+.bm-menu {
+  background:  $color-brown;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: $color-brown-light;
+}
+
+.bm-item-list {
+  color: $color-white;
+  padding: 0.8em;
+  li{
+    float: none;
+  }
+}
+
+.bm-overlay{
+  z-index: 8 !important;
+}
+
+.bm-menu-wrap{
+  z-index: 9 !important;
+}
+
+nav{
+  background: none;
+  box-shadow: none;
+}
+
+.top-menu {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  li{
+    display: inline-block;
+    margin: 0 2em;
+    float: none;
+    position: relative;
+    a{
+      padding: 0;
       &:hover{
-        cursor: pointer;
+        color: $color-white;
+        background: none;
       }
-      a{
-        text-decoration: none;
-        color: $color-gainsboro ;
-        &:hover{
-          color: $color-white-smoke;
-        }
-      }
-      &:hover:before{
-        content: "";
-        width: 100%;
-        height: 1px;
-        display: block;
-        position: absolute;
-        background: $color-white-smoke;
-        bottom: 0;
-      }
+    }
+    &:hover:before{
+      content: "";
+      width: 100%;
+      height: 1px;
+      display: block;
+      position: absolute;
+      background: $color-white;
+      bottom: 1em;
     }
   }
 }
+
+

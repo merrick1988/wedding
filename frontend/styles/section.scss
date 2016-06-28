@@ -1,16 +1,26 @@
 section{
   padding: 1em 1em 2em;
   text-align: center;
-  &.section--pink{
-    background: $color-pink;
-    .section__head {
+  clear: both;
+  &.section--gray{
+    background: $color-brown-light-03;
+  }
+  &.section--green{
+    background: $color-green;
+    color: $color-white;
+  }
+  &.section--image{
+    padding-bottom: 3em;
+    h2 {
       color: $color-white;
     }
+    h6 {
+      color: $color-white-05;
+    }
+    p{
+      color: $color-white;
+      font-weight: 200;
+      font-size: 1.1em;
+    }
   }
-}
-
-.section__head {
-  @extend .h1;
-  color: $color-red-dark;
-  margin: 0.5em;
 }

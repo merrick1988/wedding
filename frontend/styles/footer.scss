@@ -1,0 +1,75 @@
+$footer-color: $color-black-light;
+
+footer{
+  margin: 0 !important;
+  color: $footer-color;
+
+  @media #{$large-and-up} {
+    padding: 1em;
+  }
+
+  h6{
+    margin-bottom: 1.5em;
+  }
+
+  .contacts{
+    @media #{$small-and-down} {
+      text-align: center;
+      &:first-of-type{
+        margin-bottom: 1em;
+      }
+    }
+
+    .row{
+      text-align: left;
+      margin-top: 1em;
+      margin-bottom: 0;
+    }
+
+    .contact-name{
+      font-family: "adine_kirnberg";
+      font-size: 2.5em;
+      line-height: 1.2rem;
+    }
+
+    a{
+      font-size: 1.2em;
+      color: $footer-color;
+      &:hover,
+      &:focus{
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+.footer-divider{
+  text-align: center;
+  position: relative;
+  margin: 0 1em;
+  &:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: $color-black-light-03;
+    left: 0;
+    top: 50%;
+    display: block;
+    position: absolute;
+    margin-top: -2px;
+  }
+
+  i{
+    border: 1px solid $color-black-light-03;
+    border-radius: 50%;
+    font-size: 2.5em;
+    background: $color-white;
+    position: relative;
+    &:hover {
+      border: 1px solid $hover-color;
+      color: $hover-color;
+      cursor: pointer;
+    }
+  }
+}
+

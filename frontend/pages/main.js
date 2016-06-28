@@ -1,5 +1,4 @@
 import {Parallax} from "react-parallax";
-import MainMenu from "./../components/menu/menu.jsx";
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -11,13 +10,13 @@ class MainPage extends React.Component {
 
     render() {
         return (
-            <Parallax bgImage={this.state.image} strength={400}>
-                <MainMenu/>
-                <div className="main-content">
-                    <h1>Тома + Олег</h1>
-                    <h3>06 августа 2016</h3>
-                    <h3>Киев</h3>
+            <Parallax bgImage={this.state.image} strength={400} className="parallax-main">
+                <div className="parallax-main-container">
+                    <h1>Тома</h1>
+                    <h3> & </h3>
+                    <h1>Олег</h1>
                 </div>
+                <h5>06 августа 2016, Киев</h5>
             </Parallax>
         );
     }

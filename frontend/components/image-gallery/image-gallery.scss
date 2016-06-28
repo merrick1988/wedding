@@ -1,0 +1,29 @@
+@import "../../../node_modules/materialize-css/sass/components/color";
+@import "../../../node_modules/materialize-css/sass/components/variables";
+
+.image-gallery{
+  padding: 0;
+  .image-gallery-image{
+    min-height: 250px;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media #{$medium-and-up} {
+      min-height: 500px;
+    }
+
+    @media #{$large-and-up} {
+      min-height: 700px;
+      img{
+        top: -25%;
+      }
+    }
+  }
+}
+
+.image-gallery-thumbnails{
+  display: none;
+}
