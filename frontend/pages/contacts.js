@@ -1,8 +1,13 @@
+import Scroll from 'react-scroll';
+
 class ContactsPage extends React.Component {
+    scrollToTop() {
+        Scroll.animateScroll.scrollToTop();
+    }
     render() {
         return (
             <footer id="contacts" className="page-footer white">
-                <div className="footer-divider">
+                <div className="footer-divider" onClick={this.scrollToTop}>
                     <i className="material-icons">keyboard_arrow_up</i>
                 </div>
                 <div className="row">

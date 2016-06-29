@@ -9,6 +9,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      -webkit-filter: contrast(1.2) saturate(1.1) sepia(.3);
     }
 
     @media #{$medium-and-up} {
@@ -18,7 +19,8 @@
     @media #{$large-and-up} {
       min-height: 700px;
       img{
-        top: -25%;
+        top: auto;
+        bottom: -15%;
       }
     }
   }

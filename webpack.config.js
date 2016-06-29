@@ -1,6 +1,5 @@
 const webpack = require("webpack"),
     path = require("path"),
-    importOnce = require('node-sass-import-once'),
     appPath = __dirname,
     frontendPath = path.join(appPath, "frontend"),
     distPath = path.join(appPath, "dist");

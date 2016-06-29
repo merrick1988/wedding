@@ -1,9 +1,15 @@
 import './menu.scss';
+
+const Link = require('react-scroll').Link;
 const Menu = require('react-burger-menu').slide;
 
 const MenuItem = React.createClass({
     render() {
-        return <li><a href={`/#${this.props.data.link}`}>{this.props.data.name}</a></li>;
+        return (<li>
+                <Link to={this.props.data.link} offset={50} duration={500}>
+                    {this.props.data.name}
+                </Link>
+            </li>);
     }
 });
 

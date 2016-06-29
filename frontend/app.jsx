@@ -13,19 +13,24 @@ import SecondDayPage from "./pages/second-day";
 
 window.console = window.console || {error() {}, log() {}, debug() {}};
 
-ReactDOM.render(
-    <div id="outer-container">
-        <Header/>
-        <main id="page-wrap">
-            <MainPage/>
-            <HistoryPage/>
-            <WeddingPage/>
-            <MapPage/>
-            <LocationPage/>
-            <HotelPage/>
-            <SecondDayPage/>
-            <ContactsPage/>
-        </main>
-    </div>
-    , document.getElementById('content')
-);
+const WeddingApp = React.createClass({
+    render() {
+        return (
+            <div id="outer-container">
+                <Header/>
+                <main id="page-wrap">
+                    <MainPage/>
+                    <HistoryPage/>
+                    <WeddingPage/>
+                    <MapPage/>
+                    <LocationPage/>
+                    <HotelPage/>
+                    <SecondDayPage/>
+                    <ContactsPage/>
+                </main>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(<WeddingApp/>, document.getElementById('content'));

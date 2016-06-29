@@ -8,13 +8,12 @@
   background: $color-black-light;
 
   img{
-    opacity: 0.3;
+    opacity: 0.5;
   }
 
   &.parallax-main{
     img{
       opacity: 0.7;
-      //-webkit-filter: contrast(1) grayscale(0.5) saturate(2) sepia(0.4) blur(2px);
     }
   }
 }
