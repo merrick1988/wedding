@@ -1,24 +1,24 @@
-import "lodash";
+import "./images/favicon.ico";
 import "./styles/styles.scss";
 
-import Header from "./components/header/header.js";
+import Header from "./components/header/header";
 import MainPage from "./pages/main";
 import WeddingPage from "./pages/wedding";
 import HistoryPage from "./pages/history";
 import MapPage from "./pages/map";
 import LocationPage from "./pages/location";
 import HotelPage from "./pages/hotel";
-import ContactsPage from "./pages/contacts";
 import SecondDayPage from "./pages/second-day";
+import Footer from "./components/footer/footer";
 
 window.console = window.console || {error() {}, log() {}, debug() {}};
 
 const WeddingApp = React.createClass({
     render() {
         return (
-            <div id="outer-container">
+            <div>
                 <Header/>
-                <main id="page-wrap">
+                <main>
                     <MainPage/>
                     <HistoryPage/>
                     <WeddingPage/>
@@ -26,8 +26,8 @@ const WeddingApp = React.createClass({
                     <LocationPage/>
                     <HotelPage/>
                     <SecondDayPage/>
-                    <ContactsPage/>
                 </main>
+                <Footer/>
             </div>
         );
     }

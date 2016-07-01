@@ -2,23 +2,19 @@
   "menuItems": [
     {
       "id": 1,
-      "name": "Свадьба",
       "link": "wedding"
-    },
-    {
+    }, {
       "id": 2,
-      "name": "Карта",
       "link": "map"
-    },
-    {
+    }, {
       "id": 3,
-      "name": "Как добраться",
       "link": "location"
-    },
-    {
+    }, {
       "id": 4,
-      "name": "Поселение",
       "link": "hotel"
+    }, {
+      "id": 5,
+      "link": "secondDay"
     }
   ]
 }

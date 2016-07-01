@@ -1,10 +1,11 @@
+import Translate from "react-translate-component";
 import {Parallax} from "react-parallax";
 
 class MainPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            image: require('./../images/main.jpg')
+            image: require("./../images/main.jpg")
         };
     }
 
@@ -12,11 +13,11 @@ class MainPage extends React.Component {
         return (
             <Parallax bgImage={this.state.image} strength={400} className="parallax-main">
                 <div className="parallax-main-container">
-                    <h1>Тома</h1>
-                    <h3> & </h3>
-                    <h1>Олег</h1>
+                    <Translate content="main.Toma" component="h1"/>
+                    <Translate content="main.and" component="h3"/>
+                    <Translate content="main.Oleg" component="h1"/>
                 </div>
-                <h5>06 августа 2016, Киев</h5>
+                <Translate content="main.date" component="h5"/>
             </Parallax>
         );
     }

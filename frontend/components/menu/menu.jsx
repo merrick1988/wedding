@@ -1,13 +1,17 @@
 import './menu.scss';
 
-const Link = require('react-scroll').Link;
-const Menu = require('react-burger-menu').slide;
+import Translate from "react-translate-component";
+import Scroll from "react-scroll";
+import BurgerMenu from "react-burger-menu";
+
+const Link = Scroll.Link;
+const Menu = BurgerMenu.slide;
 
 const MenuItem = React.createClass({
     render() {
         return (<li>
                 <Link to={this.props.data.link} offset={50} duration={500}>
-                    {this.props.data.name}
+                    <Translate content={"menu." + this.props.data.link}/>
                 </Link>
             </li>);
     }

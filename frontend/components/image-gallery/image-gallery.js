@@ -5,6 +5,8 @@ class MyImageGallery extends React.Component {
     render() {
         const images = [
             {
+                original: require("../../images/we_5.png")
+            }, {
                 original: require("../../images/we_1.jpg")
             }, {
                 original: require("../../images/we_2.jpg")
@@ -12,8 +14,6 @@ class MyImageGallery extends React.Component {
                 original: require("../../images/we_3.jpg")
             }, {
                 original: require("../../images/we_4.jpg")
-            }, {
-                original: require("../../images/we_5.png")
             }, {
                 original: require("../../images/we_6.jpg")
             }, {
@@ -34,13 +34,7 @@ class MyImageGallery extends React.Component {
         ];
 
         return (
-            <div>
-                <ImageGallery
-                        ref={i => this._imageGallery = i}
-                        items={images}
-                        slideInterval={2000}
-                        onImageLoad={this.handleImageLoad}/>
-            </div>
+            <ImageGallery items={images} slideInterval={2000}/>
         );
     }
 }

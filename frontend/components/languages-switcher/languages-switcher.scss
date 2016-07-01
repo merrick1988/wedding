@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+$language-switcher-font-color: $color-white;
+$language-switcher--item-padding: 0.6em;
+
+.language-switcher{
+  position: absolute;
+  color: $language-switcher-font-color;
+  right: 1em;
+  z-index: 99;
+  display: flex;
+  margin: (1.5em - $language-switcher--item-padding) 0 0;
+  li{
+    font-weight: 300;
+    padding: $language-switcher--item-padding;
+    line-height: 1;
+    position: relative;
+
+    &:not(.active):hover{
+      cursor: pointer;
+
+      &:before{
+        content: "";
+        display: block;
+        height: 1px;
+        background: $language-switcher-font-color;
+        position: absolute;
+        bottom: $language-switcher--item-padding * 0.8;
+        left: $language-switcher--item-padding * 0.8;
+        right: $language-switcher--item-padding * 0.8;
+      }
+    }
+    &.active{
+      background: $color-white-03;
+    }
+  }
+}
