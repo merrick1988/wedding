@@ -5,6 +5,8 @@ class MyImageGallery extends React.Component {
     render() {
         const images = [
             {
+                original: require("../../images/we_8.jpg")
+            }, {
                 original: require("../../images/we_5.png")
             }, {
                 original: require("../../images/we_1.jpg")
@@ -17,8 +19,6 @@ class MyImageGallery extends React.Component {
             }, {
                 original: require("../../images/we_6.jpg")
             }, {
-                original: require("../../images/we_8.jpg")
-            }, {
                 original: require("../../images/we_9.jpg")
             }, {
                 original: require("../../images/we_10.jpg")
@@ -30,6 +30,8 @@ class MyImageGallery extends React.Component {
                 original: require("../../images/we_13.jpg")
             }, {
                 original: require("../../images/we_14.jpg")
+            }, {
+                original: require("../../images/we_15.jpg")
             }
         ];
 

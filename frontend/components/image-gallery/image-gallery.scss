@@ -17,10 +17,10 @@
     }
 
     @media #{$large-and-up} {
-      min-height: 700px;
+      min-height: 600px;
       img{
         top: auto;
-        bottom: -15%;
+        bottom: -30%;
       }
     }
   }

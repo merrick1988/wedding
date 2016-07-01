@@ -10,7 +10,7 @@ const Menu = BurgerMenu.slide;
 const MenuItem = React.createClass({
     render() {
         return (<li>
-                <Link to={this.props.data.link} offset={50} duration={500}>
+                <Link to={this.props.data.link} smooth offset={50} duration={500}>
                     <Translate content={"menu." + this.props.data.link}/>
                 </Link>
             </li>);
