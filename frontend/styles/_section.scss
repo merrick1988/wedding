@@ -2,13 +2,6 @@ section{
   padding: 1em 1em 2em;
   text-align: center;
   clear: both;
-  &.section--gray{
-    background: $color-brown-light-03;
-  }
-  &.section--green{
-    background: $color-green;
-    color: $color-white;
-  }
   &.section--image{
     padding-bottom: 3em;
     h2 {

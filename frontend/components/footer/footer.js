@@ -9,7 +9,7 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <footer className="page-footer white">
+            <footer className="page-footer">
                 <div className="footer-divider" onClick={this.scrollToTop}>
                     <i className="material-icons">keyboard_arrow_up</i>
                 </div>

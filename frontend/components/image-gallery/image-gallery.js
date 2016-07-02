@@ -30,8 +30,6 @@ class MyImageGallery extends React.Component {
                 original: require("../../images/we_13.jpg")
             }, {
                 original: require("../../images/we_14.jpg")
-            }, {
-                original: require("../../images/we_15.jpg")
             }
         ];
 

@@ -1,6 +1,6 @@
+@import "~materialize-css/sass/components/color";
+@import "~materialize-css/sass/components/variables";
 @import "../../styles/variables";
-@import "../../../node_modules/materialize-css/sass/components/color";
-@import "../../../node_modules/materialize-css/sass/components/variables";
 
 .wedding-data{
   margin: 2em 0 0;
@@ -15,11 +15,7 @@
 
     &:first-of-type{
       text-align: right !important;
-      background-image: url("../../images/beregynia-02.svg");
-      background-repeat: repeat-y;
-      background-size: 1.3em;
-      background-position: 100%;
-      padding-right: 4.3em !important;
+      border-right: 1px solid $color-red;
     }
     &:last-of-type{
       text-align: left !important;

@@ -1,0 +1,14 @@
+@mixin transform($args) {
+  -webkit-transform: rotate($args);
+  -moz-transform: rotate($args);
+  -ms-transform: rotate($args);
+  -o-transform: rotate($args);
+  transform: rotate($args);
+}
+
+@mixin image-filter(){
+  -webkit-filter: contrast(1.2) saturate(1.1) sepia(.3);
+  -moz-filter: contrast(1.2) saturate(1.1) sepia(.3);
+  -o-filter: contrast(1.2) saturate(1.1) sepia(.3);
+  filter: contrast(1.2) saturate(1.1) sepia(.3);
+}

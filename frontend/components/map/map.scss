@@ -1,4 +1,8 @@
+@import "~materialize-css/sass/components/color";
+@import "~materialize-css/sass/components/variables";
+@import "../../styles/mixins";
 @import "../../styles/variables";
+@import "../../styles/type";
 
 #map{
   width: 100%;
@@ -38,9 +42,10 @@
   border: 1px solid $color-red;
 
   span{
-    font-family: "adine_kirnberg", san-serif;
-    font-size: 3em;
+    font-family: $font-family-h2;
+    font-size: 3.5em;
     line-height: 0.8;
+    margin: 0.2em 0;
   }
 
   span,

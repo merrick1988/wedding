@@ -1,6 +1,6 @@
 import Translate from "react-translate-component";
 import counterpart from "counterpart";
-import PhotoGallery from "../components/photo-gallery/photo-gallery";
+import PolaroidGallery from "../components/polaroid-gallery/polaroid-gallery";
 
 class secondDayPage extends React.Component {
     constructor() {
@@ -36,7 +36,7 @@ class secondDayPage extends React.Component {
                 <Translate content="secondDay.title" component="h6"/>
                 <Translate content="secondDay.intro" component="h2"/>
                 <Translate content="secondDay.p1" component="p"/>
-                <PhotoGallery photos={this.state.photos}/>
+                <PolaroidGallery photos={this.state.photos}/>
             </section>
         );
     }

@@ -1,12 +1,15 @@
-@import "../../styles/variables";
 @import "~materialize-css/sass/components/color";
 @import "~materialize-css/sass/components/variables";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/type";
 
 $footer-color: $color-black-light;
 
 footer{
   margin: 0 !important;
   color: $footer-color;
+  background: transparent !important;
 
   @media #{$large-and-up} {
     padding: 1em;
@@ -17,8 +20,10 @@ footer{
   }
 
   .contacts{
+
     @media #{$small-and-down} {
       text-align: center;
+
       &:first-of-type{
         margin-bottom: 1em;
       }
@@ -31,7 +36,7 @@ footer{
     }
 
     .contact-name{
-      font-family: "alexandra_script";
+      font-family: $font-family-h1;
       font-size: 2.5em;
       line-height: 1.2rem;
     }
@@ -39,6 +44,7 @@ footer{
     a{
       font-size: 1.2em;
       color: $footer-color;
+
       &:hover,
       &:focus{
         color: $hover-color;
@@ -51,12 +57,13 @@ footer{
   text-align: center;
   position: relative;
   margin: 0 1em;
+
   &:before{
     content: "";
-    width: 100%;
     height: 1px;
     background: $color-black-light-03;
     left: 0;
+    right: 0;
     top: 50%;
     display: block;
     position: absolute;

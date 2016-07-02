@@ -1,5 +1,6 @@
-@import "../../../node_modules/materialize-css/sass/components/color";
-@import "../../../node_modules/materialize-css/sass/components/variables";
+@import "~materialize-css/sass/components/color";
+@import ".~materialize-css/sass/components/variables";
+@import "./../../styles/mixins";
 
 .image-gallery{
   padding: 0;
@@ -9,7 +10,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      -webkit-filter: contrast(1.2) saturate(1.1) sepia(.3);
+      @include image-filter();
     }
 
     @media #{$medium-and-up} {

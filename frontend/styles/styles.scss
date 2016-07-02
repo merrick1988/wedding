@@ -1,10 +1,27 @@
 @import "~materialize-css/sass/materialize";
 @import "~react-image-gallery/src/image-gallery";
 
+@import "mixins";
 @import "variables";
-@import "base";
 @import "type";
 @import "section";
 @import "parallax";
-@import "park-gallery";
+
+html,
+body {
+  font-size: 16px;
+  color: $color-black-light;
+  font-weight: 300;
+  background: $color-brown-light-01;
+}
+
+@font-face {
+  font-family: 'adine_kirnberg';
+  src:  url('./../fonts/adine_kirnberg.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'alexandra_script';
+  src:  url('./../fonts/alexandra_script.ttf')  format('truetype')
+}
 

@@ -1,12 +1,14 @@
+$font-family-h1:  "alexandra_script", san-serif;
+$font-family-h2:  "adine_kirnberg", san-serif;
+
 h1{
   color: $color-white;
   text-align: center;
   letter-spacing: 0.1em;
-  margin: 0;
-  font-family: "alexandra_script", san-serif;
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(8deg);
+  font-family: $font-family-h1;
   font-size: 8em;
+  margin: 0;
+  @include transform(-15deg);
 
   @media #{$medium-and-up} {
     font-size: 10em;
@@ -22,7 +24,7 @@ h2{
   margin: 0.5em 0;
   line-height: 2.8rem;
   font-size: 4em;
-  font-family: "adine_kirnberg", san-serif;
+  font-family: $font-family-h2;
   color: $color-red;
 }
 
@@ -30,12 +32,11 @@ h3{
   color: $color-white;
   text-align: center;
   letter-spacing: 0.2em;
-  margin: -0.5em 0 0 5em;
-  font-family: "adine_kirnberg", san-serif;
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(8deg);
+  font-family: $font-family-h2;
+  @include transform(-15deg);
   font-size: 4em;
   line-height: 0;
+  margin: -0.5em 0 0 5em;
 
   @media #{$medium-and-up} {
     font-size: 6em;

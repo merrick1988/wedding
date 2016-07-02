@@ -1,3 +1,5 @@
+import "./polaroid-gallery.scss";
+
 const GalleryItem = React.createClass({
     render() {
         return (
@@ -8,7 +10,7 @@ const GalleryItem = React.createClass({
     }
 });
 
-class PhotoGallery extends React.Component {
+class PolaroidGallery extends React.Component {
     render() {
         return (
             <ul className="park-gallery">
@@ -21,4 +23,4 @@ class PhotoGallery extends React.Component {
     }
 }
 
-export default PhotoGallery;
+export default PolaroidGallery;

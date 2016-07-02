@@ -1,5 +1,5 @@
 import Translate from "react-translate-component";
-import PhotoGallery from "../components/photo-gallery/photo-gallery";
+import PolaroidGallery from "./../components/polaroid-gallery/polaroid-gallery";
 
 class HotelPage extends React.Component {
     constructor() {
@@ -24,7 +24,7 @@ class HotelPage extends React.Component {
                 <Translate content="hotel.intro" component="h2"/>
                 <Translate content="hotel.p1" component="p"/>
                 <Translate content="hotel.p2" component="p"/>
-                <PhotoGallery photos={this.state.photos}/>
+                <PolaroidGallery photos={this.state.photos}/>
             </section>
         );
     }
