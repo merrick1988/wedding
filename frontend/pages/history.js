@@ -10,7 +10,6 @@ class HistoryPage extends React.Component {
                     <Translate content="history.intro" component="h2"/>
                     <Translate content="history.p1" component="p"/>
                     <Translate content="history.p2" component="p"/>
-                    <Translate content="history.p3" component="p"/>
                 </section>
                 <MyImageGallery/>
             </div>
