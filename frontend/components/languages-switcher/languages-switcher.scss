@@ -1,3 +1,5 @@
+@import "~materialize-css/sass/components/color";
+@import ".~materialize-css/sass/components/variables";
 @import "../../styles/variables";
 
 $language-switcher-font-color: $color-white;
@@ -10,6 +12,15 @@ $language-switcher--item-padding: 0.6em;
   z-index: 99;
   display: flex;
   margin: (1.5em - $language-switcher--item-padding) 0 0;
+
+  @media #{$medium-and-up} {
+    top: 2em;
+  }
+
+  @media #{$large-and-up} {
+    top: 0;
+  }
+
   li{
     font-weight: 300;
     padding: $language-switcher--item-padding;
