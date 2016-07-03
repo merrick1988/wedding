@@ -31,10 +31,6 @@ class Footer extends React.Component {
                             <Translate content="footer.contacts.maxim" className="col s4 m2 offset-l2 contact-name"/>
                             <a className="col s8 m10 l8 right-align" href="tel:+380951399509">+380 (95) 139 95 09</a>
                         </div>
-                        <div className="row">
-                            <Translate content="footer.contacts.iana" className="col s4 m2 offset-l2 contact-name"/>
-                            <a className="col s8 m10 l8 right-align" href="tel:+380662550054">+38 (066) 255 00 54</a>
-                        </div>
                     </div>
                 </div>
             </footer>

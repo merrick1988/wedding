@@ -99,8 +99,7 @@ export default {
         contacts: {
             toma: `Тома`,
             oleg: `Олег`,
-            maxim: `Максим`,
-            iana: `Яна`
+            maxim: `Максим`
         }
     }
 };
