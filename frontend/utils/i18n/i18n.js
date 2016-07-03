@@ -2,7 +2,14 @@ import counterpart from "counterpart";
 
 class I18n {
     constructor() {
-        this.supportedLanguages = ["uk", "ru"];
+        this.supportedLanguages = [{
+            code: "uk",
+            lan: "укр"
+        }, {
+            code: "ru",
+            lan: "рус"
+        }];
+
         this.defaultLanguage = "uk";
 
         this.registerTranslation();
@@ -10,14 +17,14 @@ class I18n {
     }
 
     registerTranslation() {
-        this.supportedLanguages.map(language => {
+        this.getSupportedLanguagesCodes().map((language) => {
             counterpart.registerTranslations(language, require(`./i18n_${language}`));
         });
     }
 
     getDefaultLanguage() {
         const browserLanguages = window.navigator ? window.navigator.languages : [],
-            supportedBrowserLanguages = _.intersection(browserLanguages, this.getSupportedLanguages());
+            supportedBrowserLanguages = _.intersection(browserLanguages, this.getSupportedLanguagesCodes());
 
         return supportedBrowserLanguages.length ? supportedBrowserLanguages[0] : this.defaultLanguage;
     }
@@ -26,7 +33,11 @@ class I18n {
         return this.supportedLanguages;
     }
 
-    setLanguage(language) {
+    getSupportedLanguagesCodes() {
+        return this.supportedLanguages.map((language) => language.code);
+    }
+
+    setLanguageByCode(language) {
         counterpart.setLocale(language);
     }
 }

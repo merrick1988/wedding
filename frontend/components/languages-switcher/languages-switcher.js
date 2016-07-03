@@ -11,11 +11,11 @@ const LanguagesSwitcher = React.createClass({
         };
     },
 
-    changeLanguage(language) {
+    changeLanguage(languageCode) {
         this.setState({
-            selectedLanguage: language
+            selectedLanguage: languageCode
         });
-        i18n.setLanguage(language);
+        i18n.setLanguageByCode(languageCode);
     },
 
     isLanguageActive(language) {
@@ -26,10 +26,10 @@ const LanguagesSwitcher = React.createClass({
         return (
             <ul className="language-switcher">
                 {this.state.languages.map((language) => {
-                    return (<li key={language}
-                            className={classnames({active: this.isLanguageActive(language)})}
-                            onClick={() => this.changeLanguage(language)}>
-                        {language}
+                    return (<li key={language.code}
+                            className={classnames({active: this.isLanguageActive(language.code)})}
+                            onClick={() => this.changeLanguage(language.code)}>
+                        {language.lan}
                     </li>);
                 })}
             </ul>
